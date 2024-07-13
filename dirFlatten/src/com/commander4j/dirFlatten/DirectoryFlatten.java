@@ -121,7 +121,7 @@ public class DirectoryFlatten
 				try
 				{
 					FileUtils.deleteQuietly(destFile);
-					System.out.print("Copying "+file.getName()+"...");
+					System.out.print("Copying "+file.getAbsolutePath()+"...");
 					FileUtils.copyFile(file, destFile, true);
 					System.out.println("ok");
 				}
